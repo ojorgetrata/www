@@ -1022,7 +1022,6 @@ p {
       07.CLENT css 
 ===========================*/
 .single_client {
-  padding: 30px;
   border: 2px solid #ECECEC;
   border-radius: 25px;
   -webkit-transition: all 0.3s ease-out 0s;
@@ -1030,6 +1029,12 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s; }
+  .single_client img {
+    width: 100%; /* Ensures images take full width of the column */
+    aspect-ratio: 9 / 16; /* Maintain a 4:3 aspect ratio */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 15px; /* Optional for styling */
+  }
   .single_client .client_image img {
     display: inline-block;
     border-radius: 50%; }

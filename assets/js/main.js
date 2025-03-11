@@ -2,12 +2,6 @@ $(function() {
     
     "use strict";
     
-    //===== Prealoder
-    
-    $(window).on('load', function(event) {
-        $('.preloader').delay(500).fadeOut(500);
-    });
-    
     
      //===== Sticky
 
@@ -182,14 +176,14 @@ $(function() {
     });
 
 
-    if ( $('.owl-2').length > 0 ) {
+    if ( $('.owl-2').length > 3 ) {
       $('.owl-2').owlCarousel({
           center: false,
           items: 1,
           loop: true,
           stagePadding: 0,
           margin: 20,
-          smartSpeed: 1000,
+          smartSpeed: 3000,
           autoplay: true,
           nav: true,
           dots: true,
@@ -209,6 +203,20 @@ $(function() {
           }
       });    
     }        
+
+    $('.owl-carousel').owlCarousel({
+      loop:false,
+      margin:10,
+      autoplay: true,
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+  })
     
     
     
