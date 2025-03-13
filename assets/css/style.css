@@ -1052,7 +1052,8 @@ p {
       color: #747E88; }
     .single_client .client_content p {
       margin-top: 10px; }
-  .single_client:hover {
+  .single_client img:hover {
+    border: 5px solid;
     border-color: #1E75D9; }
 
 .slick-center .single_client {
