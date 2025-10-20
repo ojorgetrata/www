@@ -52,6 +52,11 @@ const columnFields: Field[] = [
     name: 'enableLink',
     type: 'checkbox',
   },
+  {
+    name: 'media',
+    type: 'upload',
+    relationTo: 'media',
+  },
   link({
     overrides: {
       admin: {
@@ -67,6 +72,13 @@ export const Content: Block = {
   slug: 'content',
   interfaceName: 'ContentBlock',
   fields: [
+    {
+      name: 'title',
+      type: 'text',
+      admin: {
+        description: 'Optional title shown above the columns',
+      },
+    },
     {
       name: 'columns',
       type: 'array',
