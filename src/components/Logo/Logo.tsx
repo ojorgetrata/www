@@ -1,3 +1,4 @@
+import { Media } from '@/collections/Media'
 import clsx from 'clsx'
 import React from 'react'
 
@@ -23,7 +24,7 @@ export const Logo = (props: Props) => {
       fetchPriority={priority}
       decoding="async"
       className={clsx('max-w-[9.375rem] w-full h-[34px]', className)}
-      src="/media/logo.webp"
+      src="https://fkekdgmloanawtfw.public.blob.vercel-storage.com/logo.webp"
     />
   )
 }
