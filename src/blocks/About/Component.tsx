@@ -4,8 +4,14 @@ import { cn } from '@/utilities/ui'
 import RichText from '@/components/RichText'
 import { Media } from '@/components/Media'
 
+import type { AboutBlock as AboutBlockProps } from '@/payload-types'
+
+type Props = {
+    className?: string
+} & AboutBlockProps
+
 // Simple About block component: shows media and rich text side-by-side
-export const AboutBlock: React.FC<any> = (props) => {
+export const AboutBlock: React.FC<Props> = (props) => {
     const { media, richText, mediaPosition = 'left', className } = props
 
     const isRight = mediaPosition === 'right'

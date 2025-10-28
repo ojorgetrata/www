@@ -1,8 +1,6 @@
 'use client'
 
-import { cn } from '@/utilities/ui'
-import React, { useCallback } from 'react'
-import RichText from '@/components/RichText'
+import React from 'react'
 import { Media } from '../../components/Media'
 import useEmblaCarousel from 'embla-carousel-react'
 
@@ -13,13 +11,6 @@ import {
 } from './Util'
 
 import type { GalleryBlock as GalleryBlockProps } from '@/payload-types'
-import { EmblaOptionsType } from 'embla-carousel'
-
-type PropType = {
-    slides: number[]
-    options?: EmblaOptionsType
-}
-
 
 export const GalleryBlock: React.FC<GalleryBlockProps> = (props) => {
     const { title, columns } = props
