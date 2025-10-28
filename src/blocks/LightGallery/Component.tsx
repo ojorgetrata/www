@@ -46,7 +46,10 @@ export const GalleryBlock: React.FC<GalleryBlockProps> = (props) => {
                                     /* each slide should be a flex-none element so slides don't stack */
                                     <div className="embla__slide flex-none w-full" key={index}>
                                         <div className="flex justify-center items-center py-6">
-                                            <Media resource={media} imgClassName="mb-6 rounded-[0.8rem] object-cover mx-auto" />
+                                            <Media
+                                                resource={media}
+                                                imgClassName="mb-6 max-h-[36rem] max-w-full w-auto rounded-[0.8rem] mx-auto object-contain"
+                                            />
                                         </div>
                                     </div>
                                 )
